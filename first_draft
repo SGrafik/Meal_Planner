@@ -8,6 +8,6 @@ meals = ['Pasta', 'Pizza', 'Steak', 'Fish', 'Chicken']
 # between 0 and the length of the list. If the list grows longer random()
 # will automatically adjust its new max.
 
-print(meals[random.randint(0, len(meals))])
+print(meals[random.randint(0, (len(meals) - 1))])
 
 
