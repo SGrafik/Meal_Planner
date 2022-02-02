@@ -1,0 +1,48 @@
+# Meal Planner (using Dictionaries)
+
+'''  This doesn't do any RANDOMIZATION. It will simply return the FIRST match based on user input.
+This also doesn't handle any errors and will only display 'None' if no matches are found.
+This doesn't print out an ingredients list, etc., etc., etc. Much more work to be done.
+NOT very elegant or useful yet...  '''
+
+
+# meals is actually a LIST of DICTIONARIES,
+# each dict contains 3 key:value pairs,
+# the VALUE of the "ingredients" k:v pair is in turn a LIST (to hold as many ingredients as you like).
+
+meals = [
+         {"dish": "Pasta Bolognese", "ingredients": ["pasta", "minced meat", "tomatoes", "onions"],
+          "cooking time": 30},
+
+         {"dish": "Pizza Salami", "ingredients": ["pizza dough", "salami", "tomatoes", "cheese"],
+          "cooking time": 45},
+
+         {"dish": "Rump Steak", "ingredients": ["beef", "butter / oil", "mushrooms", "red wine"],
+          "cooking time": 20}
+         ]
+
+
+# This is where we actually QUERY the meals (list of dicts) with a FOR LOOP by:
+# iterating through all of each dictionary's "ingredients" VALUES,
+# and then RETURNING (as it's a FUNCTION!) the result (formatted in a 'F string' because it's pretty).
+# Oh, and I've added the "cooking time" because I'm fancy...
+
+def meal_planner():
+    '''  The meal_planner function asks the user for an ingredient via input.
+    It then iterates through the "ingredients" values in "meals".
+    Returns the FIRST positive result. Will return "None" if there no match. '''
+
+    ingredient = input("Please enter an ingredient: ")
+
+    for i in meals:
+        if ingredient in i["ingredients"]:
+            return f'{i["dish"]}, takes {i["cooking time"]} minutes.'
+
+
+
+# Here we 'call' the def FUNCTION into life. Since we call the function with PRINT the result
+# that is returned will actually be printed on screen.
+
+print(meal_planner())
+
+
