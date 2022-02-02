@@ -9,3 +9,5 @@ meals = ['Pasta', 'Pizza', 'Steak', 'Fish', 'Chicken']
 # will automatically adjust its new max.
 
 print(meals[random.randint(0, len(meals))])
+
+
