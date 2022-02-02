@@ -4,7 +4,7 @@ import random
 
 meals = ['Pasta', 'Pizza', 'Steak', 'Fish', 'Chicken']
 
-# Uses random() to print our a dish from meals by using its index position
+# Uses random() to print out a dish from meals by using its index position
 # between 0 and the length of the list. If the list grows longer random()
 # will automatically adjust its new max.
 
