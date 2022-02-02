@@ -2,12 +2,29 @@ import random
 
 # The meals list contains the names of dishes.
 
+
 meals = ['Pasta', 'Pizza', 'Steak', 'Fish', 'Chicken']
+
 
 # Uses random() to print out a dish from meals by using its index position
 # between 0 and the length of the list. If the list grows longer random()
 # will automatically adjust its new max.
 
+
 print(meals[random.randint(0, (len(meals) - 1))])
 
 
+
+# The pseudo-code for the print statement looks something like this:
+
+# 1. Print an Item from Meals, 
+
+# 2. Choose the Item by its index position, 
+
+# 3. Generate the # index position by choosing at random 
+
+# 4. an integer between o and the length of the list Meals
+
+# 5. Note: You need to len -1 because of the way index works in Python; otherwise you'll
+#    get an IndexError: list index out of range. That's because len -1 is in fact 
+#    the last item in a list index).
