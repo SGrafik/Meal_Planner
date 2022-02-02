@@ -27,4 +27,5 @@ print(meals[random.randint(0, (len(meals) - 1))])
 
 # 5. Note: You need to len -1 because of the way index works in Python; otherwise you'll
 #    get an "IndexError: list index out of range". That's because len -1 is in fact 
-#    the last item in a list index.
+#    the very last item in a list index.
+
