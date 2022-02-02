@@ -1,0 +1,11 @@
+import random
+
+# The meals list contains the names of dishes.
+
+meals = ['Pasta', 'Pizza', 'Steak', 'Fish', 'Chicken']
+
+# Uses random() to print our a dish from meals by using its index position
+# between 0 and the length of the list. If the list grows longer random()
+# will automatically adjust its new max.
+
+print(meals[random.randint(0, len(meals))])
