@@ -19,11 +19,11 @@ print(meals[random.randint(0, (len(meals) - 1))])
 
 # 1. Print an Item from Meals, 
 
-# 2. Choose the Item by its index position, 
+# 2. Choose the Item by its Index position, 
 
-# 3. Generate the # index position by choosing at random 
+# 3. Generate the exact Index position by choosing at random() 
 
-# 4. an integer between 0 and the length of the list Meals
+# 4. an Integer between 0 and the length() of the list Meals.
 
 # 5. Note: You need to len -1 because of the way index works in Python; otherwise you'll
 #    get an "IndexError: list index out of range". That's because len -1 is in fact 
