@@ -1,9 +1,11 @@
 # Meal Planner (using Dictionaries)
 
 '''  This doesn't do any RANDOMIZATION. It will simply return the FIRST match based on user input.
+The user INPUT absolutely has to match the 'ingredients' VALUE 100% or else it will fail to find anything.
 This also doesn't handle any errors and will only display 'None' if no matches are found.
-This doesn't print out an ingredients list, etc., etc., etc. Much more work to be done.
-NOT very elegant or useful yet...  '''
+This can only search for INGREDIENTS - nothing else (yet).
+This doesn't print out an ingredients list, etc., etc., etc. 
+Much more work to be done. NOT very useful yet...  '''
 
 
 # meals is actually a LIST of DICTIONARIES,
@@ -17,7 +19,7 @@ meals = [
          {"dish": "Pizza Salami", "ingredients": ["pizza dough", "salami", "tomatoes", "cheese"],
           "cooking time": 45},
 
-         {"dish": "Rump Steak", "ingredients": ["beef", "butter / oil", "mushrooms", "red wine"],
+         {"dish": "Rump Steak", "ingredients": ["beef", "butter", "mushrooms", "red wine"],
           "cooking time": 20}
          ]
 
@@ -30,7 +32,7 @@ meals = [
 def meal_planner():
     '''  The meal_planner function asks the user for an ingredient via input.
     It then iterates through the "ingredients" values in "meals".
-    Returns the FIRST positive result. Will return "None" if there no match. '''
+    Returns the FIRST positive result. Will return "None" if there's no match. '''
 
     ingredient = input("Please enter an ingredient: ")
 
@@ -44,5 +46,15 @@ def meal_planner():
 # that is returned will actually be printed on screen.
 
 print(meal_planner())
+
+
+
+# Also worth looking at these subjects:
+
+# https://note.nkmk.me/en/python-dict-in-values-items/
+
+# https://note.nkmk.me/en/python-dict-get-key-from-value/
+
+# https://www.delftstack.com/howto/python/python-check-if-value-in-dictionary/
 
 
